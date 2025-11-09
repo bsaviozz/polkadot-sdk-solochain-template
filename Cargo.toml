@@ -10,6 +10,7 @@ members = [
     "node",
     "pallets/template",
     "runtime",
+    "node/sign_bench",
 ]
 resolver = "2"
 
@@ -72,6 +73,7 @@ sp-storage = { version = "22.0.0", default-features = false }
 sp-transaction-pool = { version = "36.0.0", default-features = false }
 sp-version = { version = "39.0.0", default-features = false }
 substrate-wasm-builder = { version = "26.0.1", default-features = false }
+sp-std = { version = "14.0.0", default-features = false }
 
 [profile.release]
 opt-level = 3
