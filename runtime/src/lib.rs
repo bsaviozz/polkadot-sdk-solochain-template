@@ -50,6 +50,12 @@ pub mod opaque {
 	pub type Hash = <BlakeTwo256 as HashT>::Output;
 }
 
+use sp_core::foo::test_linking;
+#[allow(dead_code)]
+fn _verify_sdk_link() {
+    let _ = sp_core::foo::test_linking();
+}
+
 impl_opaque_keys! {
 	pub struct SessionKeys {
 		pub aura: Aura,
