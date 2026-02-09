@@ -131,9 +131,15 @@ impl_runtime_apis! {
 	}
 
 	impl sp_session::SessionKeys<Block> for Runtime {
-		fn generate_session_keys(seed: Option<Vec<u8>>) -> Vec<u8> {
-			SessionKeys::generate(seed)
+		fn generate_session_keys(
+			owner: sp_runtime::Vec<u8>,
+			seed: Option<sp_runtime::Vec<u8>>,
+		) -> sp_session::OpaqueGeneratedSessionKeys {
+			// New API: SessionKeys::generate(&[u8], Option<Vec<u8>>) -> GeneratedSessionKeys<...>
+			// Runtime API expects OpaqueGeneratedSessionKeys, so convert with `.into()`.
+			SessionKeys::generate(owner.as_slice(), seed).into()
 		}
+
 
 		fn decode_session_keys(
 			encoded: Vec<u8>,

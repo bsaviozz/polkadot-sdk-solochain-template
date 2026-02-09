@@ -23,6 +23,7 @@ use sp_consensus_aura::sr25519::AuthorityId as AuraId;
 use sp_consensus_grandpa::AuthorityId as GrandpaId;
 use sp_genesis_builder::{self, PresetId};
 use sp_keyring::Sr25519Keyring;
+use sp_core::crypto::Ss58Codec;
 
 // Returns the genesis config presets populated with given parameters.
 fn testnet_genesis(
@@ -50,6 +51,10 @@ fn testnet_genesis(
 
 /// Return the development genesis config.
 pub fn development_config_genesis() -> Value {
+	let dilithium: AccountId =
+        AccountId::from_ss58check("5FvvoNFbHzhYjAfXYesS5b5RNhA48EJdT66mCn8VrXJm4Szi")
+            .expect("valid ss58 for AccountId");
+
 	testnet_genesis(
 		vec![(
 			sp_keyring::Sr25519Keyring::Alice.public().into(),
@@ -60,6 +65,7 @@ pub fn development_config_genesis() -> Value {
 			Sr25519Keyring::Bob.to_account_id(),
 			Sr25519Keyring::AliceStash.to_account_id(),
 			Sr25519Keyring::BobStash.to_account_id(),
+			dilithium,
 		],
 		sp_keyring::Sr25519Keyring::Alice.to_account_id(),
 	)
@@ -67,23 +73,31 @@ pub fn development_config_genesis() -> Value {
 
 /// Return the local genesis config preset.
 pub fn local_config_genesis() -> Value {
-	testnet_genesis(
-		vec![
-			(
-				sp_keyring::Sr25519Keyring::Alice.public().into(),
-				sp_keyring::Ed25519Keyring::Alice.public().into(),
-			),
-			(
-				sp_keyring::Sr25519Keyring::Bob.public().into(),
-				sp_keyring::Ed25519Keyring::Bob.public().into(),
-			),
-		],
-		Sr25519Keyring::iter()
-			.filter(|v| v != &Sr25519Keyring::One && v != &Sr25519Keyring::Two)
-			.map(|v| v.to_account_id())
-			.collect::<Vec<_>>(),
-		Sr25519Keyring::Alice.to_account_id(),
-	)
+    let dilithium: AccountId =
+        AccountId::from_ss58check("5FvvoNFbHzhYjAfXYesS5b5RNhA48EJdT66mCn8VrXJm4Szi")
+            .expect("valid ss58 for AccountId");
+
+    let mut endowed_accounts = Sr25519Keyring::iter()
+        .filter(|v| v != &Sr25519Keyring::One && v != &Sr25519Keyring::Two)
+        .map(|v| v.to_account_id())
+        .collect::<Vec<_>>();
+
+    endowed_accounts.push(dilithium);
+
+    testnet_genesis(
+        vec![
+            (
+                sp_keyring::Sr25519Keyring::Alice.public().into(),
+                sp_keyring::Ed25519Keyring::Alice.public().into(),
+            ),
+            (
+                sp_keyring::Sr25519Keyring::Bob.public().into(),
+                sp_keyring::Ed25519Keyring::Bob.public().into(),
+            ),
+        ],
+        endowed_accounts,
+        sp_keyring::Sr25519Keyring::Alice.to_account_id(),
+    )
 }
 
 /// Provides the JSON representation of predefined genesis config for given `id`.
