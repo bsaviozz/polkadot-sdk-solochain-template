@@ -24,6 +24,9 @@ sp-core = { default-features = true, workspace = true }
 sp-io = { default-features = true, workspace = true }
 sp-runtime = { default-features = true, workspace = true }
 
+[build-dependencies]
+sp-core = { workspace = true, features = ["std"] }
+
 [features]
 default = ["std"]
 std = [
