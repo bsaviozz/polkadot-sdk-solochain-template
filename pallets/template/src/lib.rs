@@ -67,6 +67,11 @@ pub mod pallet {
 	use super::*;
 	use frame_support::pallet_prelude::*;
 	use frame_system::pallet_prelude::*;
+	use scale_info::prelude::vec::Vec;
+
+	use codec::Decode;
+	use frame_support::{dispatch::DispatchResult, ensure};
+	use frame_support::sp_runtime::{AccountId32, MultiSignature, traits::{Lazy, Verify}};
 
 	// The `Pallet` struct serves as a placeholder to implement traits, methods and dispatchables
 	// (`Call`s) in this pallet.
@@ -129,6 +134,8 @@ pub mod pallet {
 		NoneValue,
 		/// There was an attempt to increment the value in storage over `u32::MAX`.
 		StorageOverflow,
+		// The signature can't be verified
+		BadSignature,
 	}
 
 	/// The pallet's dispatchable functions ([`Call`]s).
@@ -198,5 +205,26 @@ pub mod pallet {
 				},
 			}
 		}
+
+		#[pallet::call_index(2)]
+		#[pallet::weight(0)]
+		pub fn verify_sig(
+			_origin: OriginFor<T>,
+			signer: AccountId32,
+			msg: Vec<u8>,
+			sig_scale: Vec<u8>, // SCALE(MultiSignature)
+		) -> DispatchResult {
+			let sig: MultiSignature = Decode::decode(&mut &sig_scale[..])
+				.map_err(|_| Error::<T>::BadSignature)?;
+
+			struct Msg<'a>(&'a [u8]);
+			impl<'a> Lazy<[u8]> for Msg<'a> {
+				fn get(&mut self) -> &[u8] { self.0 }
+			}
+
+			ensure!(sig.verify(Msg(&msg), &signer), Error::<T>::BadSignature);
+			Ok(())
+		}
+
 	}
 }
