@@ -70,8 +70,9 @@ pub mod pallet {
 	use scale_info::prelude::vec::Vec;
 
 	use codec::Decode;
-	use frame_support::{dispatch::DispatchResult, ensure};
+	use frame_support::ensure;
 	use frame_support::sp_runtime::{AccountId32, MultiSignature, traits::{Lazy, Verify}};
+	use frame_system::ensure_none;
 
 	// The `Pallet` struct serves as a placeholder to implement traits, methods and dispatchables
 	// (`Call`s) in this pallet.
@@ -136,6 +137,8 @@ pub mod pallet {
 		StorageOverflow,
 		// The signature can't be verified
 		BadSignature,
+		// Optional - bad encoding
+		BadSignatureEncoding,
 	}
 
 	/// The pallet's dispatchable functions ([`Call`]s).
@@ -207,24 +210,63 @@ pub mod pallet {
 		}
 
 		#[pallet::call_index(2)]
-		#[pallet::weight(0)]
-		pub fn verify_sig(
-			_origin: OriginFor<T>,
+		#[pallet::weight(T::WeightInfo::verify_sr25519(*n))]
+		pub fn verify_sr25519(
+			origin: OriginFor<T>,
+			n: u32,
 			signer: AccountId32,
 			msg: Vec<u8>,
 			sig_scale: Vec<u8>, // SCALE(MultiSignature)
 		) -> DispatchResult {
+			Self::verify_sig(origin, n, signer, msg, sig_scale)
+		}
+
+		#[pallet::call_index(3)]
+		#[pallet::weight(T::WeightInfo::verify_ecdsa(*n))]
+		pub fn verify_ecdsa(
+			origin: OriginFor<T>,
+			n: u32,
+			signer: AccountId32,
+			msg: Vec<u8>,
+			sig_scale: Vec<u8>, // SCALE(MultiSignature)
+		) -> DispatchResult {
+			Self::verify_sig(origin, n, signer, msg, sig_scale)
+		}
+
+		#[pallet::call_index(4)]
+		#[pallet::weight(T::WeightInfo::verify_dilithium(*n))]
+		pub fn verify_dilithium(
+			origin: OriginFor<T>,
+			n: u32,
+			signer: AccountId32,
+			msg: Vec<u8>,
+			sig_scale: Vec<u8>, // SCALE(MultiSignature)
+		) -> DispatchResult {
+			Self::verify_sig(origin, n, signer, msg, sig_scale)
+		}
+
+	}
+
+	impl<T: Config> Pallet<T> {
+		fn verify_sig(
+			origin: OriginFor<T>,
+			n: u32,
+			signer: AccountId32,
+			msg: Vec<u8>,
+			sig_scale: Vec<u8>,
+		) -> DispatchResult {
+			// Benchmarks usually use RawOrigin::None
+			ensure_none(origin)?;
+
 			let sig: MultiSignature = Decode::decode(&mut &sig_scale[..])
-				.map_err(|_| Error::<T>::BadSignature)?;
+				.map_err(|_| Error::<T>::BadSignatureEncoding)?; // or BadSignature if you didn’t add Encoding
 
 			struct Msg<'a>(&'a [u8]);
 			impl<'a> Lazy<[u8]> for Msg<'a> {
 				fn get(&mut self) -> &[u8] { self.0 }
 			}
-
 			ensure!(sig.verify(Msg(&msg), &signer), Error::<T>::BadSignature);
 			Ok(())
 		}
-
 	}
 }

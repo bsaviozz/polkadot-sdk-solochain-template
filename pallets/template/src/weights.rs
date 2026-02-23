@@ -36,6 +36,10 @@ use core::marker::PhantomData;
 pub trait WeightInfo {
 	fn do_something() -> Weight;
 	fn cause_error() -> Weight;
+
+	fn verify_sr25519(n: u32) -> Weight;
+    fn verify_ecdsa(n: u32) -> Weight;
+    fn verify_dilithium(n: u32) -> Weight;
 }
 
 /// Weights for pallet_template using the Substrate node and recommended hardware.
@@ -62,6 +66,18 @@ impl<T: frame_system::Config> WeightInfo for SubstrateWeight<T> {
 			.saturating_add(T::DbWeight::get().reads(1_u64))
 			.saturating_add(T::DbWeight::get().writes(1_u64))
 	}
+
+	fn verify_sr25519(_n: u32) -> Weight {
+        Weight::from_parts(0, 0)
+    }
+
+    fn verify_ecdsa(_n: u32) -> Weight {
+        Weight::from_parts(0, 0)
+    }
+
+    fn verify_dilithium(_n: u32) -> Weight {
+        Weight::from_parts(0, 0)
+    }
 }
 
 // For backwards compatibility and tests
@@ -87,4 +103,8 @@ impl WeightInfo for () {
 			.saturating_add(RocksDbWeight::get().reads(1_u64))
 			.saturating_add(RocksDbWeight::get().writes(1_u64))
 	}
+	// Default impl for () so it compiles before you generate real weights:
+	fn verify_sr25519(_n: u32) -> Weight { Weight::from_parts(0, 0) }
+    fn verify_ecdsa(_n: u32) -> Weight { Weight::from_parts(0, 0) }
+    fn verify_dilithium(_n: u32) -> Weight { Weight::from_parts(0, 0) }
 }

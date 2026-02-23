@@ -11,6 +11,8 @@ use frame_system::RawOrigin;
 mod benchmarks {
 	use super::*;
 	use sp_core::ByteArray;
+	use sp_runtime::{AccountId32, MultiSignature};
+	use codec::Encode;
 
 	#[benchmark]
 	fn do_something() {
@@ -31,87 +33,72 @@ mod benchmarks {
 
 		assert_eq!(Something::<T>::get(), Some(101u32));
 	}
-	/*
-	#[benchmark]
-	fn verify_dilithium() {
-		use scale_info::prelude::vec::Vec;
-		use codec::Encode;
 
-		use sp_core::ByteArray;
-		use sp_core::dilithium;
-		use sp_core::hashing::blake2_256;
-		use sp_runtime::{AccountId32, MultiSignature, DilithiumMultiSig};
+	const N: u32 = 100; // use 100 or 500 for stable per-verify cost
 
-		const MSG: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/dil_msg.bin"));
-		const PUB: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/dil_pub.bin"));
-		const SIG: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/dil_sig.bin"));
-		const SIGNER_BYTES: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/dil_signer.bin"));
-
-		let public = dilithium::Public::from_slice(PUB).expect("PUB len must match");
-		let signature = dilithium::Signature::from_slice(SIG).expect("SIG len must match");
-
-		let signer_arr: [u8; 32] = SIGNER_BYTES.try_into().expect("dil_signer.bin must be 32 bytes");
-		let signer = AccountId32::from(signer_arr);
-
-		// Must match your MultiSigner::Dilithium into_account(): blake2_256(public)
-		let derived: AccountId32 = blake2_256(public.as_ref()).into();
-		assert_eq!(derived, signer);
-
-		let dil_ms = DilithiumMultiSig { signature, public };
-		let ms = MultiSignature::Dilithium(dil_ms);
-		let ms_scale: Vec<u8> = ms.encode();
-
-		#[extrinsic_call]
-		verify_sig(RawOrigin::None, signer, MSG.to_vec(), ms_scale);
-	}*/
-
-	#[benchmark]
-	fn verify_sr25519() {
-		use scale_info::prelude::vec::Vec;
-		use codec::Encode;
-
+    #[benchmark]
+    fn verify_sr25519() {
 		use sp_core::sr25519;
-		use sp_runtime::{AccountId32, MultiSignature};
 
-		const MSG: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/sr_msg.bin"));
-		const SIG: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/sr_sig.bin"));
-		const SIGNER_BYTES: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/sr_signer.bin"));
+        const MSG: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/sr_msg.bin"));
+        const SIG: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/sr_sig.bin"));
+        const SIGNER_BYTES: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/sr_signer.bin"));
 
-		let signature = sr25519::Signature::from_slice(SIG).expect("sr_sig.bin must be 64 bytes");
+        let signature = sr25519::Signature::from_slice(SIG).expect("sr_sig.bin must be 64 bytes");
+        let signer_arr: [u8; 32] = SIGNER_BYTES.try_into().expect("sr_signer.bin must be 32 bytes");
+        let signer = AccountId32::from(signer_arr);
 
-		let signer_arr: [u8; 32] = SIGNER_BYTES.try_into().expect("sr_signer.bin must be 32 bytes");
-		let signer = AccountId32::from(signer_arr);
+        let ms = MultiSignature::Sr25519(signature).encode();
 
-		let ms = MultiSignature::Sr25519(signature);
-		let ms_scale: Vec<u8> = ms.encode();
+        #[extrinsic_call]
+        verify_sr25519(RawOrigin::None, N, signer, MSG.to_vec(), ms);
+    }
 
-		#[extrinsic_call]
-		verify_sig(RawOrigin::None, signer, MSG.to_vec(), ms_scale);
-	}
+    #[benchmark]
+    fn verify_ecdsa() {
+        use sp_core::ecdsa;
 
-	#[benchmark]
-	fn verify_ecdsa() {
-		use scale_info::prelude::vec::Vec;
-		use codec::Encode;
+        const MSG: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/ec_msg.bin"));
+        const SIG: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/ec_sig.bin"));
+        const SIGNER_BYTES: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/ec_signer.bin"));
 
-		use sp_core::ecdsa;
-		use sp_runtime::{AccountId32, MultiSignature};
+        let signature = ecdsa::Signature::from_slice(SIG).expect("ec_sig.bin must be 65 bytes");
+        let signer_arr: [u8; 32] = SIGNER_BYTES.try_into().expect("ec_signer.bin must be 32 bytes");
+        let signer = AccountId32::from(signer_arr);
 
-		const MSG: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/ec_msg.bin"));
-		const SIG: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/ec_sig.bin"));
-		const SIGNER_BYTES: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/ec_signer.bin"));
+        let ms = MultiSignature::Ecdsa(signature).encode();
 
-		let signature = ecdsa::Signature::from_slice(SIG).expect("ec_sig.bin must be 65 bytes");
+        #[extrinsic_call]
+        verify_ecdsa(RawOrigin::None, N, signer, MSG.to_vec(), ms);
+    }
 
-		let signer_arr: [u8; 32] = SIGNER_BYTES.try_into().expect("ec_signer.bin must be 32 bytes");
-		let signer = AccountId32::from(signer_arr);
+    #[benchmark]
+    fn verify_dilithium() {
+        use sp_core::dilithium;
+        use sp_core::hashing::blake2_256;
+        use sp_runtime::DilithiumMultiSig;
 
-		let ms = MultiSignature::Ecdsa(signature);
-		let ms_scale: Vec<u8> = ms.encode();
+        const MSG: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/dil_msg.bin"));
+        const PUB: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/dil_pub.bin"));
+        const SIG: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/dil_sig.bin"));
+        const SIGNER_BYTES: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/dil_signer.bin"));
 
-		#[extrinsic_call]
-		verify_sig(RawOrigin::None, signer, MSG.to_vec(), ms_scale);
-	}
+        let public = dilithium::Public::from_slice(PUB).expect("PUB len must match");
+        let signature = dilithium::Signature::from_slice(SIG).expect("SIG len must match");
 
-	impl_benchmark_test_suite!(Template, crate::mock::new_test_ext(), crate::mock::Test);
+        let signer_arr: [u8; 32] = SIGNER_BYTES.try_into().expect("dil_signer.bin must be 32 bytes");
+        let signer = AccountId32::from(signer_arr);
+
+        // sanity check signer derivation rule
+        let derived: AccountId32 = blake2_256(public.as_ref()).into();
+        assert_eq!(derived, signer);
+
+        let dil_ms = DilithiumMultiSig { signature, public };
+        let ms = MultiSignature::Dilithium(dil_ms).encode();
+
+        #[extrinsic_call]
+        verify_dilithium(RawOrigin::None, N, signer, MSG.to_vec(), ms);
+    }
+
+    impl_benchmark_test_suite!(Pallet, crate::mock::new_test_ext(), crate::mock::Test);
 }

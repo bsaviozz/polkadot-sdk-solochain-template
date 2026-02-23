@@ -18,14 +18,15 @@ frame-benchmarking = { optional = true, workspace = true }
 frame-support.workspace = true
 frame-system.workspace = true
 scale-info = { features = ["derive"], workspace = true }
+sp-core = { workspace = true, optional = true }
+sp-runtime = { workspace = true, optional = true }
 
 [dev-dependencies]
-sp-core = { default-features = true, workspace = true }
 sp-io = { default-features = true, workspace = true }
-sp-runtime = { default-features = true, workspace = true }
 
 [build-dependencies]
 sp-core = { workspace = true, features = ["std"] }
+qp-rusty-crystals-dilithium = { version = "2.1.0", default-features = true }
 
 [features]
 default = ["std"]
@@ -40,7 +41,8 @@ runtime-benchmarks = [
 	"frame-benchmarking/runtime-benchmarks",
 	"frame-support/runtime-benchmarks",
 	"frame-system/runtime-benchmarks",
-	"sp-runtime/runtime-benchmarks",
+	"sp-core",
+  	"sp-runtime",
 ]
 try-runtime = [
 	"frame-support/try-runtime",
