@@ -10,6 +10,13 @@ use sc_transaction_pool_api::OffchainTransactionPoolFactory;
 use solochain_template_runtime::{self, apis::RuntimeApi, opaque::Block};
 use sp_consensus_aura::sr25519::AuthorityPair as AuraPair;
 use std::{sync::Arc, time::Duration};
+use futures::StreamExt;
+use sc_consensus_manual_seal::{self as manual_seal, InstantSealParams};
+use sc_consensus_manual_seal::consensus::{
+    aura::AuraConsensusDataProvider,
+    timestamp::SlotTimestampProvider,
+};
+use sp_inherents::Error as InherentError;
 
 pub(crate) type FullClient = sc_service::TFullClient<
 	Block,
@@ -83,6 +90,7 @@ pub fn new_partial(config: &Configuration) -> Result<Service, ServiceError> {
 		telemetry.as_ref().map(|x| x.handle()),
 	)?;
 
+	/*
 	let cidp_client = client.clone();
 	let import_queue =
 		sc_consensus_aura::import_queue::<AuraPair, _, _, _, _, _>(ImportQueueParams {
@@ -112,7 +120,13 @@ pub fn new_partial(config: &Configuration) -> Result<Service, ServiceError> {
 			check_for_equivocation: Default::default(),
 			telemetry: telemetry.as_ref().map(|x| x.handle()),
 			compatibility_mode: Default::default(),
-		})?;
+		})?; */
+
+		let import_queue = manual_seal::import_queue(
+			Box::new(grandpa_block_import.clone()),
+			&task_manager.spawn_essential_handle(),
+			config.prometheus_registry(),
+		);
 
 	Ok(sc_service::PartialComponents {
 		client,
@@ -237,6 +251,7 @@ pub fn new_full<
 		tracing_execute_block: None,
 	})?;
 
+	/*
 	if role.is_authority() {
 		let proposer_factory = sc_basic_authorship::ProposerFactory::new(
 			task_manager.spawn_handle(),
@@ -283,6 +298,48 @@ pub fn new_full<
 		task_manager
 			.spawn_essential_handle()
 			.spawn_blocking("aura", Some("block-authoring"), aura);
+	}*/
+
+	if role.is_authority() {
+		let proposer = sc_basic_authorship::ProposerFactory::new(
+			task_manager.spawn_handle(),
+			client.clone(),
+			transaction_pool.clone(),
+			prometheus_registry.as_ref(),
+			telemetry.as_ref().map(|x| x.handle()),
+		);
+
+		// Provides the Aura pre-runtime digest (so pallet-aura CurrentSlot is set correctly)
+		let aura_digest_provider = AuraConsensusDataProvider::new(client.clone());
+
+		// Used to create a timestamp inherent that always matches the next Aura slot
+		let cidp_client = client.clone();
+
+		let instant_params = InstantSealParams {
+			block_import: client.clone(),
+			env: proposer,
+			client: client.clone(),
+			pool: transaction_pool.clone(),
+			select_chain,
+			consensus_data_provider: Some(Box::new(aura_digest_provider)),
+			create_inherent_data_providers: move |_, ()| {
+				let cidp_client = cidp_client.clone();
+				async move {
+					// This produces a timestamp inherent aligned with Aura slot duration.
+					let ts = SlotTimestampProvider::new_aura::<Block, _>(cidp_client)
+						.map_err(|e| InherentError::Application(Box::new(e)))?;
+
+					// One-tuple of inherent providers
+					Ok((ts,))
+				}
+			},
+		};
+
+		task_manager.spawn_essential_handle().spawn_blocking(
+			"instant-seal",
+			None,
+			manual_seal::run_instant_seal_and_finalize(instant_params),
+		);
 	}
 
 	if enable_grandpa {
