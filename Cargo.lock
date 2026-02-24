@@ -875,7 +875,7 @@ checksum = "2af50177e190e07a26ab74f8b1efbfe2ef87da2116221318cb1c2e82baf7de06"
 [[package]]
 name = "binary-merkle-tree"
 version = "13.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "hash-db",
  "log",
@@ -2039,7 +2039,7 @@ dependencies = [
 [[package]]
 name = "cumulus-client-parachain-inherent"
 version = "0.1.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "cumulus-primitives-core",
@@ -2050,7 +2050,7 @@ dependencies = [
  "sc-client-api",
  "sc-consensus-babe",
  "sc-network-types",
- "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-inherents",
  "sp-runtime 31.0.1",
  "sp-state-machine 0.35.0",
@@ -2061,7 +2061,7 @@ dependencies = [
 [[package]]
 name = "cumulus-pallet-parachain-system"
 version = "0.7.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "array-bytes",
  "bytes",
@@ -2088,7 +2088,7 @@ dependencies = [
  "sp-io 30.0.0",
  "sp-runtime 31.0.1",
  "sp-state-machine 0.35.0",
- "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-trie 29.0.0",
  "sp-version 29.0.0",
  "staging-xcm",
@@ -2099,7 +2099,7 @@ dependencies = [
 [[package]]
 name = "cumulus-pallet-parachain-system-proc-macro"
 version = "0.6.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "proc-macro-crate 3.4.0",
  "proc-macro2",
@@ -2110,7 +2110,7 @@ dependencies = [
 [[package]]
 name = "cumulus-primitives-core"
 version = "0.7.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "polkadot-core-primitives",
@@ -2127,7 +2127,7 @@ dependencies = [
 [[package]]
 name = "cumulus-primitives-parachain-inherent"
 version = "0.7.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "cumulus-primitives-core",
@@ -2141,7 +2141,7 @@ dependencies = [
 [[package]]
 name = "cumulus-primitives-proof-size-hostfunction"
 version = "0.2.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "sp-externalities 0.25.0",
  "sp-runtime-interface 24.0.0",
@@ -2151,7 +2151,7 @@ dependencies = [
 [[package]]
 name = "cumulus-relay-chain-interface"
 version = "0.7.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "cumulus-primitives-core",
@@ -2171,7 +2171,7 @@ dependencies = [
 [[package]]
 name = "cumulus-test-relay-sproof-builder"
 version = "0.7.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "cumulus-primitives-core",
  "parity-scale-codec",
@@ -3117,7 +3117,7 @@ checksum = "77ce24cb58228fbb8aa041425bb1050850ac19177686ea6e0f41a70416f56fdb"
 [[package]]
 name = "fork-tree"
 version = "12.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
 ]
@@ -3150,7 +3150,7 @@ checksum = "28dd6caf6059519a65843af8fe2a3ae298b14b80179855aeb4adc2c1934ee619"
 [[package]]
 name = "frame-benchmarking"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-support",
  "frame-support-procedural",
@@ -3174,7 +3174,7 @@ dependencies = [
 [[package]]
 name = "frame-benchmarking-cli"
 version = "32.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "Inflector",
  "array-bytes",
@@ -3253,7 +3253,7 @@ dependencies = [
 [[package]]
 name = "frame-election-provider-solution-type"
 version = "13.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "proc-macro-crate 3.4.0",
  "proc-macro2",
@@ -3264,7 +3264,7 @@ dependencies = [
 [[package]]
 name = "frame-election-provider-support"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-election-provider-solution-type",
  "frame-support",
@@ -3275,13 +3275,13 @@ dependencies = [
  "sp-core 28.0.0",
  "sp-npos-elections",
  "sp-runtime 31.0.1",
- "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
 ]
 
 [[package]]
 name = "frame-executive"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "aquamarine",
  "frame-support",
@@ -3323,7 +3323,7 @@ dependencies = [
 [[package]]
 name = "frame-metadata-hash-extension"
 version = "0.1.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "array-bytes",
  "const-hex",
@@ -3339,7 +3339,7 @@ dependencies = [
 [[package]]
 name = "frame-storage-access-test-runtime"
 version = "0.1.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "cumulus-pallet-parachain-system",
  "parity-scale-codec",
@@ -3353,7 +3353,7 @@ dependencies = [
 [[package]]
 name = "frame-support"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "aquamarine",
  "array-bytes",
@@ -3375,8 +3375,8 @@ dependencies = [
  "sp-api 26.0.0",
  "sp-arithmetic 23.0.0",
  "sp-core 28.0.0",
- "sp-crypto-hashing-proc-macro 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
- "sp-debug-derive 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing-proc-macro 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
+ "sp-debug-derive 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-genesis-builder",
  "sp-inherents",
  "sp-io 30.0.0",
@@ -3384,7 +3384,7 @@ dependencies = [
  "sp-runtime 31.0.1",
  "sp-staking",
  "sp-state-machine 0.35.0",
- "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-tracing 16.0.0",
  "sp-trie 29.0.0",
  "sp-weights 27.0.0",
@@ -3394,7 +3394,7 @@ dependencies = [
 [[package]]
 name = "frame-support-procedural"
 version = "23.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "Inflector",
  "cfg-expr",
@@ -3407,14 +3407,14 @@ dependencies = [
  "proc-macro-warning",
  "proc-macro2",
  "quote",
- "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "syn 2.0.117",
 ]
 
 [[package]]
 name = "frame-support-procedural-tools"
 version = "10.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-support-procedural-tools-derive",
  "proc-macro-crate 3.4.0",
@@ -3426,7 +3426,7 @@ dependencies = [
 [[package]]
 name = "frame-support-procedural-tools-derive"
 version = "11.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -3436,7 +3436,7 @@ dependencies = [
 [[package]]
 name = "frame-system"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "cfg-if",
  "docify",
@@ -3455,7 +3455,7 @@ dependencies = [
 [[package]]
 name = "frame-system-benchmarking"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-benchmarking",
  "frame-support",
@@ -3469,7 +3469,7 @@ dependencies = [
 [[package]]
 name = "frame-system-rpc-runtime-api"
 version = "26.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "docify",
  "parity-scale-codec",
@@ -3479,7 +3479,7 @@ dependencies = [
 [[package]]
 name = "frame-try-runtime"
 version = "0.34.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-support",
  "parity-scale-codec",
@@ -3694,6 +3694,17 @@ dependencies = [
 
 [[package]]
 name = "getrandom"
+version = "0.1.16"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8fc3cb4d91f53b50155bdcfd23f6a4c39ae1969c2ae85982b135750cccaf5fce"
+dependencies = [
+ "cfg-if",
+ "libc",
+ "wasi 0.9.0+wasi-snapshot-preview1",
+]
+
+[[package]]
+name = "getrandom"
 version = "0.2.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ff2abc00be7fca6ebc474524697ae276ad847ad0a6b3faa4bcb027e9a4614ad0"
@@ -3701,7 +3712,7 @@ dependencies = [
  "cfg-if",
  "js-sys",
  "libc",
- "wasi",
+ "wasi 0.11.1+wasi-snapshot-preview1",
  "wasm-bindgen",
 ]
 
@@ -5888,7 +5899,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a69bcab0ad47271a0234d9422b131806bf3968021e5dc9328caf2d4cd58557fc"
 dependencies = [
  "libc",
- "wasi",
+ "wasi 0.11.1+wasi-snapshot-preview1",
  "windows-sys 0.61.2",
 ]
 
@@ -6460,7 +6471,7 @@ dependencies = [
 [[package]]
 name = "pallet-asset-conversion"
 version = "10.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-benchmarking",
  "frame-support",
@@ -6478,7 +6489,7 @@ dependencies = [
 [[package]]
 name = "pallet-aura"
 version = "27.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -6494,7 +6505,7 @@ dependencies = [
 [[package]]
 name = "pallet-authority-discovery"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -6509,7 +6520,7 @@ dependencies = [
 [[package]]
 name = "pallet-authorship"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -6522,7 +6533,7 @@ dependencies = [
 [[package]]
 name = "pallet-babe"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-benchmarking",
  "frame-support",
@@ -6545,7 +6556,7 @@ dependencies = [
 [[package]]
 name = "pallet-balances"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "docify",
  "frame-benchmarking",
@@ -6561,7 +6572,7 @@ dependencies = [
 [[package]]
 name = "pallet-broker"
 version = "0.6.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "bitvec",
  "frame-benchmarking",
@@ -6579,7 +6590,7 @@ dependencies = [
 [[package]]
 name = "pallet-grandpa"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-benchmarking",
  "frame-support",
@@ -6601,7 +6612,7 @@ dependencies = [
 [[package]]
 name = "pallet-message-queue"
 version = "31.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "environmental",
  "frame-benchmarking",
@@ -6620,7 +6631,7 @@ dependencies = [
 [[package]]
 name = "pallet-mmr"
 version = "27.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "log",
  "parity-scale-codec",
@@ -6632,7 +6643,7 @@ dependencies = [
 [[package]]
 name = "pallet-session"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -6654,7 +6665,7 @@ dependencies = [
 [[package]]
 name = "pallet-session-benchmarking"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-benchmarking",
  "frame-support",
@@ -6670,7 +6681,7 @@ dependencies = [
 [[package]]
 name = "pallet-staking"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-benchmarking",
  "frame-election-provider-support",
@@ -6692,7 +6703,7 @@ dependencies = [
 [[package]]
 name = "pallet-sudo"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "docify",
  "frame-benchmarking",
@@ -6712,7 +6723,7 @@ dependencies = [
  "frame-support",
  "frame-system",
  "parity-scale-codec",
- "qp-rusty-crystals-dilithium",
+ "qp-rusty-crystals-dilithium 2.1.0",
  "scale-info",
  "sp-core 28.0.0",
  "sp-io 30.0.0",
@@ -6722,7 +6733,7 @@ dependencies = [
 [[package]]
 name = "pallet-timestamp"
 version = "27.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "docify",
  "frame-benchmarking",
@@ -6740,7 +6751,7 @@ dependencies = [
 [[package]]
 name = "pallet-transaction-payment"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-benchmarking",
  "frame-support",
@@ -6756,7 +6767,7 @@ dependencies = [
 [[package]]
 name = "pallet-transaction-payment-rpc"
 version = "30.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "jsonrpsee",
  "pallet-transaction-payment-rpc-runtime-api",
@@ -6772,7 +6783,7 @@ dependencies = [
 [[package]]
 name = "pallet-transaction-payment-rpc-runtime-api"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "pallet-transaction-payment",
  "parity-scale-codec",
@@ -7115,7 +7126,7 @@ dependencies = [
 [[package]]
 name = "polkadot-core-primitives"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -7126,7 +7137,7 @@ dependencies = [
 [[package]]
 name = "polkadot-node-metrics"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "bs58",
  "futures",
@@ -7143,7 +7154,7 @@ dependencies = [
 [[package]]
 name = "polkadot-node-network-protocol"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-channel 1.9.0",
  "async-trait",
@@ -7168,7 +7179,7 @@ dependencies = [
 [[package]]
 name = "polkadot-node-primitives"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "bitvec",
  "bounded-vec",
@@ -7192,7 +7203,7 @@ dependencies = [
 [[package]]
 name = "polkadot-node-subsystem-types"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "derive_more 0.99.20",
@@ -7220,7 +7231,7 @@ dependencies = [
 [[package]]
 name = "polkadot-overseer"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "futures",
@@ -7240,7 +7251,7 @@ dependencies = [
 [[package]]
 name = "polkadot-parachain-primitives"
 version = "6.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "array-bytes",
  "bounded-collections 0.3.2",
@@ -7257,7 +7268,7 @@ dependencies = [
 [[package]]
 name = "polkadot-primitives"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "bitvec",
  "bounded-collections 0.3.2",
@@ -7279,14 +7290,14 @@ dependencies = [
  "sp-keystore 0.34.0",
  "sp-runtime 31.0.1",
  "sp-staking",
- "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "thiserror 1.0.69",
 ]
 
 [[package]]
 name = "polkadot-runtime-metrics"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "bs58",
  "frame-benchmarking",
@@ -7298,7 +7309,7 @@ dependencies = [
 [[package]]
 name = "polkadot-runtime-parachains"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "bitflags 1.3.2",
  "bitvec",
@@ -7338,7 +7349,7 @@ dependencies = [
  "sp-runtime 31.0.1",
  "sp-session",
  "sp-staking",
- "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "staging-xcm",
  "staging-xcm-executor",
  "static_assertions",
@@ -7347,7 +7358,7 @@ dependencies = [
 [[package]]
 name = "polkadot-sdk-frame"
 version = "0.1.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "docify",
  "frame-benchmarking",
@@ -7382,7 +7393,7 @@ dependencies = [
 [[package]]
 name = "polkadot-statement-table"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "polkadot-primitives",
@@ -8004,6 +8015,16 @@ dependencies = [
 
 [[package]]
 name = "qp-rusty-crystals-dilithium"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "10a4714f7b30092ec7595ad40a77d43ac0cd76eb802442ac192ab9b835db63ff"
+dependencies = [
+ "rand 0.7.3",
+ "sha2 0.10.9",
+]
+
+[[package]]
+name = "qp-rusty-crystals-dilithium"
 version = "2.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d734438e080d69fa186dac23565dd261fa8146048af00ba8aea7467b429c104b"
@@ -8021,7 +8042,7 @@ dependencies = [
  "libc",
  "once_cell",
  "raw-cpuid",
- "wasi",
+ "wasi 0.11.1+wasi-snapshot-preview1",
  "web-sys",
  "winapi",
 ]
@@ -8127,6 +8148,19 @@ checksum = "dc33ff2d4973d518d823d61aa239014831e521c75da58e3df4840d3f47749d09"
 
 [[package]]
 name = "rand"
+version = "0.7.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6a6b1679d49b24bbfe0c803429aa1874472f50d9b363131f0e89fc356b544d03"
+dependencies = [
+ "getrandom 0.1.16",
+ "libc",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_hc",
+]
+
+[[package]]
+name = "rand"
 version = "0.8.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "34af8d1a0e25924bc5b7c43c079c942339d8f0a8b57c39049bef581b46327404"
@@ -8148,6 +8182,16 @@ dependencies = [
 
 [[package]]
 name = "rand_chacha"
+version = "0.2.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f4c8ed856279c9737206bf725bf36935d8666ead7aa69b52be55af369d193402"
+dependencies = [
+ "ppv-lite86",
+ "rand_core 0.5.1",
+]
+
+[[package]]
+name = "rand_chacha"
 version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e6c10a63a0fa32252be49d21e7709d4d4baf8d231c2dbce1eaa8141b9b127d88"
@@ -8164,6 +8208,15 @@ checksum = "d3022b5f1df60f26e1ffddd6c66e8aa15de382ae63b3a0c1bfc0e4d3e3f325cb"
 dependencies = [
  "ppv-lite86",
  "rand_core 0.9.5",
+]
+
+[[package]]
+name = "rand_core"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "90bde5296fc891b0cef12a6d03ddccc162ce7b2aff54160af9338f8d40df6d19"
+dependencies = [
+ "getrandom 0.1.16",
 ]
 
 [[package]]
@@ -8192,6 +8245,15 @@ checksum = "32cb0b9bc82b0a0876c2dd994a7e7a2683d3e7390ca40e6886785ef0c7e3ee31"
 dependencies = [
  "num-traits",
  "rand 0.8.5",
+]
+
+[[package]]
+name = "rand_hc"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ca3129af7b92a17112d59ad498c6f81eaf463253766b90396d39ea7a39d6613c"
+dependencies = [
+ "rand_core 0.5.1",
 ]
 
 [[package]]
@@ -8701,7 +8763,7 @@ dependencies = [
 [[package]]
 name = "sc-allocator"
 version = "23.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "log",
  "sp-core 28.0.0",
@@ -8724,7 +8786,7 @@ dependencies = [
 [[package]]
 name = "sc-authority-discovery"
 version = "0.34.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "futures",
@@ -8756,7 +8818,7 @@ dependencies = [
 [[package]]
 name = "sc-basic-authorship"
 version = "0.34.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "futures",
  "log",
@@ -8779,7 +8841,7 @@ dependencies = [
 [[package]]
 name = "sc-block-builder"
 version = "0.33.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "sp-api 26.0.0",
@@ -8794,7 +8856,7 @@ dependencies = [
 [[package]]
 name = "sc-chain-spec"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "array-bytes",
  "docify",
@@ -8809,7 +8871,7 @@ dependencies = [
  "serde_json",
  "sp-blockchain",
  "sp-core 28.0.0",
- "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-genesis-builder",
  "sp-io 30.0.0",
  "sp-runtime 31.0.1",
@@ -8820,7 +8882,7 @@ dependencies = [
 [[package]]
 name = "sc-chain-spec-derive"
 version = "11.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "proc-macro-crate 3.4.0",
  "proc-macro2",
@@ -8831,7 +8893,7 @@ dependencies = [
 [[package]]
 name = "sc-cli"
 version = "0.36.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "array-bytes",
  "bip39",
@@ -8873,7 +8935,7 @@ dependencies = [
 [[package]]
 name = "sc-client-api"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "fnv",
  "futures",
@@ -8899,7 +8961,7 @@ dependencies = [
 [[package]]
 name = "sc-client-db"
 version = "0.35.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "hash-db",
  "kvdb",
@@ -8927,7 +8989,7 @@ dependencies = [
 [[package]]
 name = "sc-consensus"
 version = "0.33.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "futures",
@@ -8950,7 +9012,7 @@ dependencies = [
 [[package]]
 name = "sc-consensus-aura"
 version = "0.34.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "fork-tree",
@@ -8981,7 +9043,7 @@ dependencies = [
 [[package]]
 name = "sc-consensus-babe"
 version = "0.34.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "fork-tree",
@@ -9006,7 +9068,7 @@ dependencies = [
  "sp-consensus-babe",
  "sp-consensus-slots",
  "sp-core 28.0.0",
- "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-inherents",
  "sp-keystore 0.34.0",
  "sp-runtime 31.0.1",
@@ -9018,7 +9080,7 @@ dependencies = [
 [[package]]
 name = "sc-consensus-epochs"
 version = "0.33.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "fork-tree",
  "parity-scale-codec",
@@ -9031,7 +9093,7 @@ dependencies = [
 [[package]]
 name = "sc-consensus-grandpa"
 version = "0.19.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "ahash 0.8.12",
  "array-bytes",
@@ -9065,7 +9127,7 @@ dependencies = [
  "sp-consensus",
  "sp-consensus-grandpa",
  "sp-core 28.0.0",
- "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-keystore 0.34.0",
  "sp-runtime 31.0.1",
  "substrate-prometheus-endpoint",
@@ -9075,7 +9137,7 @@ dependencies = [
 [[package]]
 name = "sc-consensus-slots"
 version = "0.33.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "futures",
@@ -9099,7 +9161,7 @@ dependencies = [
 [[package]]
 name = "sc-executor"
 version = "0.32.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "parking_lot 0.12.5",
@@ -9146,7 +9208,7 @@ dependencies = [
 [[package]]
 name = "sc-executor-common"
 version = "0.29.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "polkavm 0.30.0",
  "sc-allocator 23.0.0",
@@ -9173,7 +9235,7 @@ dependencies = [
 [[package]]
 name = "sc-executor-polkavm"
 version = "0.29.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "log",
  "polkavm 0.30.0",
@@ -9196,7 +9258,7 @@ dependencies = [
 [[package]]
 name = "sc-executor-wasmtime"
 version = "0.29.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "anyhow",
  "log",
@@ -9229,7 +9291,7 @@ dependencies = [
 [[package]]
 name = "sc-informant"
 version = "0.33.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "console",
  "futures",
@@ -9245,7 +9307,7 @@ dependencies = [
 [[package]]
 name = "sc-keystore"
 version = "25.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "array-bytes",
  "parking_lot 0.12.5",
@@ -9259,7 +9321,7 @@ dependencies = [
 [[package]]
 name = "sc-mixnet"
 version = "0.4.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "array-bytes",
  "arrayvec 0.7.6",
@@ -9287,7 +9349,7 @@ dependencies = [
 [[package]]
 name = "sc-network"
 version = "0.34.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "array-bytes",
  "async-channel 1.9.0",
@@ -9336,7 +9398,7 @@ dependencies = [
 [[package]]
 name = "sc-network-common"
 version = "0.33.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "bitflags 1.3.2",
  "parity-scale-codec",
@@ -9346,7 +9408,7 @@ dependencies = [
 [[package]]
 name = "sc-network-gossip"
 version = "0.34.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "ahash 0.8.12",
  "futures",
@@ -9365,7 +9427,7 @@ dependencies = [
 [[package]]
 name = "sc-network-light"
 version = "0.33.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "array-bytes",
  "async-channel 1.9.0",
@@ -9386,7 +9448,7 @@ dependencies = [
 [[package]]
 name = "sc-network-sync"
 version = "0.33.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "array-bytes",
  "async-channel 1.9.0",
@@ -9420,7 +9482,7 @@ dependencies = [
 [[package]]
 name = "sc-network-transactions"
 version = "0.33.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "array-bytes",
  "futures",
@@ -9439,7 +9501,7 @@ dependencies = [
 [[package]]
 name = "sc-network-types"
 version = "0.10.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "bs58",
  "bytes",
@@ -9460,7 +9522,7 @@ dependencies = [
 [[package]]
 name = "sc-offchain"
 version = "29.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "bytes",
  "fnv",
@@ -9494,7 +9556,7 @@ dependencies = [
 [[package]]
 name = "sc-proposer-metrics"
 version = "0.17.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "log",
  "substrate-prometheus-endpoint",
@@ -9503,7 +9565,7 @@ dependencies = [
 [[package]]
 name = "sc-rpc"
 version = "29.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "futures",
  "jsonrpsee",
@@ -9535,7 +9597,7 @@ dependencies = [
 [[package]]
 name = "sc-rpc-api"
 version = "0.33.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "jsonrpsee",
  "parity-scale-codec",
@@ -9556,7 +9618,7 @@ dependencies = [
 [[package]]
 name = "sc-rpc-server"
 version = "11.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "dyn-clone",
  "forwarded-header-value",
@@ -9580,7 +9642,7 @@ dependencies = [
 [[package]]
 name = "sc-rpc-spec-v2"
 version = "0.34.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "array-bytes",
  "futures",
@@ -9613,13 +9675,13 @@ dependencies = [
 [[package]]
 name = "sc-runtime-utilities"
 version = "0.1.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "sc-executor 0.32.0",
  "sc-executor-common 0.29.0",
  "sp-core 28.0.0",
- "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-state-machine 0.35.0",
  "sp-wasm-interface 20.0.0",
  "thiserror 1.0.69",
@@ -9628,7 +9690,7 @@ dependencies = [
 [[package]]
 name = "sc-service"
 version = "0.35.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "directories",
@@ -9692,7 +9754,7 @@ dependencies = [
 [[package]]
 name = "sc-state-db"
 version = "0.30.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "log",
  "parity-scale-codec",
@@ -9703,7 +9765,7 @@ dependencies = [
 [[package]]
 name = "sc-sysinfo"
 version = "27.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "derive_more 0.99.20",
  "futures",
@@ -9716,14 +9778,14 @@ dependencies = [
  "serde",
  "serde_json",
  "sp-core 28.0.0",
- "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-io 30.0.0",
 ]
 
 [[package]]
 name = "sc-telemetry"
 version = "15.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "chrono",
  "futures",
@@ -9742,7 +9804,7 @@ dependencies = [
 [[package]]
 name = "sc-tracing"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "chrono",
  "console",
@@ -9770,7 +9832,7 @@ dependencies = [
 [[package]]
 name = "sc-tracing-proc-macro"
 version = "11.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "proc-macro-crate 3.4.0",
  "proc-macro2",
@@ -9781,7 +9843,7 @@ dependencies = [
 [[package]]
 name = "sc-transaction-pool"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "futures",
@@ -9798,7 +9860,7 @@ dependencies = [
  "sp-api 26.0.0",
  "sp-blockchain",
  "sp-core 28.0.0",
- "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-runtime 31.0.1",
  "sp-tracing 16.0.0",
  "sp-transaction-pool",
@@ -9813,7 +9875,7 @@ dependencies = [
 [[package]]
 name = "sc-transaction-pool-api"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "futures",
@@ -9831,7 +9893,7 @@ dependencies = [
 [[package]]
 name = "sc-utils"
 version = "14.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-channel 1.9.0",
  "futures",
@@ -10697,7 +10759,7 @@ dependencies = [
 [[package]]
 name = "sp-api"
 version = "26.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "docify",
  "hash-db",
@@ -10742,7 +10804,7 @@ dependencies = [
 [[package]]
 name = "sp-api-proc-macro"
 version = "15.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "Inflector",
  "blake2 0.10.6",
@@ -10771,7 +10833,7 @@ dependencies = [
 [[package]]
 name = "sp-application-crypto"
 version = "30.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -10796,7 +10858,7 @@ dependencies = [
 [[package]]
 name = "sp-arithmetic"
 version = "23.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "docify",
  "integer-sqrt",
@@ -10825,7 +10887,7 @@ dependencies = [
 [[package]]
 name = "sp-authority-discovery"
 version = "26.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -10837,7 +10899,7 @@ dependencies = [
 [[package]]
 name = "sp-block-builder"
 version = "26.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "sp-api 26.0.0",
  "sp-inherents",
@@ -10847,7 +10909,7 @@ dependencies = [
 [[package]]
 name = "sp-blockchain"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "futures",
  "parity-scale-codec",
@@ -10866,7 +10928,7 @@ dependencies = [
 [[package]]
 name = "sp-consensus"
 version = "0.32.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "futures",
@@ -10883,7 +10945,7 @@ dependencies = [
 [[package]]
 name = "sp-consensus-aura"
 version = "0.32.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "parity-scale-codec",
@@ -10899,7 +10961,7 @@ dependencies = [
 [[package]]
 name = "sp-consensus-babe"
 version = "0.32.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "parity-scale-codec",
@@ -10917,7 +10979,7 @@ dependencies = [
 [[package]]
 name = "sp-consensus-grandpa"
 version = "13.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "finality-grandpa",
  "log",
@@ -10934,7 +10996,7 @@ dependencies = [
 [[package]]
 name = "sp-consensus-slots"
 version = "0.32.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -10945,7 +11007,7 @@ dependencies = [
 [[package]]
 name = "sp-core"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "ark-vrf",
  "array-bytes",
@@ -10969,7 +11031,7 @@ dependencies = [
  "parking_lot 0.12.5",
  "paste",
  "primitive-types",
- "qp-rusty-crystals-dilithium",
+ "qp-rusty-crystals-dilithium 1.0.1",
  "rand 0.8.5",
  "scale-info",
  "schnorrkel",
@@ -10977,10 +11039,10 @@ dependencies = [
  "secrecy 0.8.0",
  "serde",
  "sha2 0.10.9",
- "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
- "sp-debug-derive 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
+ "sp-debug-derive 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-externalities 0.25.0",
- "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-storage 19.0.0",
  "ss58-registry",
  "substrate-bip39 0.4.7",
@@ -11055,7 +11117,7 @@ dependencies = [
 [[package]]
 name = "sp-crypto-hashing"
 version = "0.1.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "blake2b_simd",
  "byteorder",
@@ -11079,17 +11141,17 @@ dependencies = [
 [[package]]
 name = "sp-crypto-hashing-proc-macro"
 version = "0.1.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "quote",
- "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "syn 2.0.117",
 ]
 
 [[package]]
 name = "sp-database"
 version = "10.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "kvdb",
  "kvdb-rocksdb",
@@ -11110,7 +11172,7 @@ dependencies = [
 [[package]]
 name = "sp-debug-derive"
 version = "14.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "proc-macro-warning",
  "proc-macro2",
@@ -11121,7 +11183,7 @@ dependencies = [
 [[package]]
 name = "sp-externalities"
 version = "0.25.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "environmental",
  "parity-scale-codec",
@@ -11142,7 +11204,7 @@ dependencies = [
 [[package]]
 name = "sp-genesis-builder"
 version = "0.8.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -11154,7 +11216,7 @@ dependencies = [
 [[package]]
 name = "sp-inherents"
 version = "26.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "impl-trait-for-tuples",
@@ -11167,7 +11229,7 @@ dependencies = [
 [[package]]
 name = "sp-io"
 version = "30.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "bytes",
  "docify",
@@ -11179,7 +11241,7 @@ dependencies = [
  "rustversion",
  "secp256k1 0.28.2",
  "sp-core 28.0.0",
- "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-externalities 0.25.0",
  "sp-keystore 0.34.0",
  "sp-runtime-interface 24.0.0",
@@ -11220,7 +11282,7 @@ dependencies = [
 [[package]]
 name = "sp-keyring"
 version = "31.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "sp-core 28.0.0",
  "sp-runtime 31.0.1",
@@ -11230,7 +11292,7 @@ dependencies = [
 [[package]]
 name = "sp-keystore"
 version = "0.34.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "parking_lot 0.12.5",
@@ -11253,7 +11315,7 @@ dependencies = [
 [[package]]
 name = "sp-maybe-compressed-blob"
 version = "11.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "thiserror 1.0.69",
  "zstd 0.12.4",
@@ -11272,7 +11334,7 @@ dependencies = [
 [[package]]
 name = "sp-metadata-ir"
 version = "0.6.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "frame-metadata 23.0.1",
  "parity-scale-codec",
@@ -11293,7 +11355,7 @@ dependencies = [
 [[package]]
 name = "sp-mixnet"
 version = "0.4.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -11304,7 +11366,7 @@ dependencies = [
 [[package]]
 name = "sp-mmr-primitives"
 version = "26.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "log",
  "parity-scale-codec",
@@ -11313,7 +11375,7 @@ dependencies = [
  "serde",
  "sp-api 26.0.0",
  "sp-core 28.0.0",
- "sp-debug-derive 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-debug-derive 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-runtime 31.0.1",
  "thiserror 1.0.69",
 ]
@@ -11321,7 +11383,7 @@ dependencies = [
 [[package]]
 name = "sp-npos-elections"
 version = "26.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -11334,7 +11396,7 @@ dependencies = [
 [[package]]
 name = "sp-offchain"
 version = "26.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "sp-api 26.0.0",
  "sp-core 28.0.0",
@@ -11344,7 +11406,7 @@ dependencies = [
 [[package]]
 name = "sp-panic-handler"
 version = "13.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "backtrace",
  "regex",
@@ -11363,7 +11425,7 @@ dependencies = [
 [[package]]
 name = "sp-rpc"
 version = "26.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "rustc-hash 1.1.0",
  "serde",
@@ -11373,7 +11435,7 @@ dependencies = [
 [[package]]
 name = "sp-runtime"
 version = "31.0.1"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "binary-merkle-tree 13.0.0",
  "bytes",
@@ -11393,7 +11455,7 @@ dependencies = [
  "sp-arithmetic 23.0.0",
  "sp-core 28.0.0",
  "sp-io 30.0.0",
- "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-trie 29.0.0",
  "sp-weights 27.0.0",
  "strum 0.26.3",
@@ -11434,7 +11496,7 @@ dependencies = [
 [[package]]
 name = "sp-runtime-interface"
 version = "24.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "bytes",
  "impl-trait-for-tuples",
@@ -11442,7 +11504,7 @@ dependencies = [
  "polkavm-derive 0.30.0",
  "sp-externalities 0.25.0",
  "sp-runtime-interface-proc-macro 17.0.0",
- "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-storage 19.0.0",
  "sp-tracing 16.0.0",
  "sp-wasm-interface 20.0.0",
@@ -11472,7 +11534,7 @@ dependencies = [
 [[package]]
 name = "sp-runtime-interface-proc-macro"
 version = "17.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "Inflector",
  "expander",
@@ -11499,7 +11561,7 @@ dependencies = [
 [[package]]
 name = "sp-session"
 version = "27.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
@@ -11513,7 +11575,7 @@ dependencies = [
 [[package]]
 name = "sp-staking"
 version = "26.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "impl-trait-for-tuples",
  "parity-scale-codec",
@@ -11526,7 +11588,7 @@ dependencies = [
 [[package]]
 name = "sp-state-machine"
 version = "0.35.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "hash-db",
  "log",
@@ -11567,7 +11629,7 @@ dependencies = [
 [[package]]
 name = "sp-statement-store"
 version = "10.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "aes-gcm",
  "curve25519-dalek",
@@ -11581,7 +11643,7 @@ dependencies = [
  "sp-api 26.0.0",
  "sp-application-crypto 30.0.0",
  "sp-core 28.0.0",
- "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-externalities 0.25.0",
  "sp-runtime 31.0.1",
  "sp-runtime-interface 24.0.0",
@@ -11598,18 +11660,18 @@ checksum = "12f8ee986414b0a9ad741776762f4083cd3a5128449b982a3919c4df36874834"
 [[package]]
 name = "sp-std"
 version = "14.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 
 [[package]]
 name = "sp-storage"
 version = "19.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "impl-serde",
  "parity-scale-codec",
  "ref-cast",
  "serde",
- "sp-debug-derive 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-debug-derive 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
 ]
 
 [[package]]
@@ -11628,7 +11690,7 @@ dependencies = [
 [[package]]
 name = "sp-timestamp"
 version = "26.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "parity-scale-codec",
@@ -11640,7 +11702,7 @@ dependencies = [
 [[package]]
 name = "sp-tracing"
 version = "16.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "regex",
@@ -11664,7 +11726,7 @@ dependencies = [
 [[package]]
 name = "sp-transaction-pool"
 version = "26.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "sp-api 26.0.0",
  "sp-runtime 31.0.1",
@@ -11673,7 +11735,7 @@ dependencies = [
 [[package]]
 name = "sp-transaction-storage-proof"
 version = "26.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "async-trait",
  "parity-scale-codec",
@@ -11688,7 +11750,7 @@ dependencies = [
 [[package]]
 name = "sp-trie"
 version = "29.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "ahash 0.8.12",
  "foldhash 0.1.5",
@@ -11736,16 +11798,16 @@ dependencies = [
 [[package]]
 name = "sp-version"
 version = "29.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "impl-serde",
  "parity-scale-codec",
  "parity-wasm",
  "scale-info",
  "serde",
- "sp-crypto-hashing-proc-macro 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-crypto-hashing-proc-macro 0.1.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-runtime 31.0.1",
- "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-std 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
  "sp-version-proc-macro 13.0.0",
  "thiserror 1.0.69",
 ]
@@ -11771,7 +11833,7 @@ dependencies = [
 [[package]]
 name = "sp-version-proc-macro"
 version = "13.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "parity-scale-codec",
  "proc-macro-warning",
@@ -11796,7 +11858,7 @@ dependencies = [
 [[package]]
 name = "sp-wasm-interface"
 version = "20.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "anyhow",
  "impl-trait-for-tuples",
@@ -11821,7 +11883,7 @@ dependencies = [
 [[package]]
 name = "sp-weights"
 version = "27.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "bounded-collections 0.3.2",
  "parity-scale-codec",
@@ -11829,7 +11891,7 @@ dependencies = [
  "serde",
  "smallvec",
  "sp-arithmetic 23.0.0",
- "sp-debug-derive 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium)",
+ "sp-debug-derive 14.0.0 (git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44)",
 ]
 
 [[package]]
@@ -11902,7 +11964,7 @@ checksum = "6ce2be8dc25455e1f91df71bfa12ad37d7af1092ae736f3a6cd0e37bc7810596"
 [[package]]
 name = "staging-xcm"
 version = "7.0.1"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "array-bytes",
  "bounded-collections 0.3.2",
@@ -11923,7 +11985,7 @@ dependencies = [
 [[package]]
 name = "staging-xcm-builder"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "environmental",
  "frame-support",
@@ -11947,7 +12009,7 @@ dependencies = [
 [[package]]
 name = "staging-xcm-executor"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "environmental",
  "frame-benchmarking",
@@ -12048,7 +12110,7 @@ dependencies = [
 [[package]]
 name = "substrate-bip39"
 version = "0.4.7"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "hmac 0.12.1",
  "pbkdf2",
@@ -12073,12 +12135,12 @@ dependencies = [
 [[package]]
 name = "substrate-build-script-utils"
 version = "11.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 
 [[package]]
 name = "substrate-frame-rpc-system"
 version = "28.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "docify",
  "frame-system-rpc-runtime-api",
@@ -12098,7 +12160,7 @@ dependencies = [
 [[package]]
 name = "substrate-prometheus-endpoint"
 version = "0.17.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "http-body-util",
  "hyper 1.8.1",
@@ -12112,7 +12174,7 @@ dependencies = [
 [[package]]
 name = "substrate-wasm-builder"
 version = "17.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "build-helper",
  "cargo_metadata",
@@ -12910,7 +12972,7 @@ dependencies = [
 [[package]]
 name = "tracing-gum"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "coarsetime",
  "polkadot-primitives",
@@ -12921,7 +12983,7 @@ dependencies = [
 [[package]]
 name = "tracing-gum-proc-macro"
 version = "5.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "expander",
  "proc-macro-crate 3.4.0",
@@ -13325,6 +13387,12 @@ dependencies = [
 
 [[package]]
 name = "wasi"
+version = "0.9.0+wasi-snapshot-preview1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cccddf32554fecc6acb585f82a32a72e28b48f8c4c1883ddfeeeaa96f7d8e519"
+
+[[package]]
+name = "wasi"
 version = "0.11.1+wasi-snapshot-preview1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ccf3ec651a847eb01de73ccad15eb7d99f80485de043efb2f370cd654f4ea44b"
@@ -13353,7 +13421,7 @@ version = "0.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1757e0d1f8456693c7e5c6c629bdb54884e032aa0bb53c155f6a39f94440d332"
 dependencies = [
- "wasi",
+ "wasi 0.11.1+wasi-snapshot-preview1",
 ]
 
 [[package]]
@@ -14713,7 +14781,7 @@ dependencies = [
 [[package]]
 name = "xcm-procedural"
 version = "7.0.0"
-source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium#8e0d493f30c7e2a9a7610f4cf0c96a214352e132"
+source = "git+https://github.com/bsaviozz/polkadot-sdk.git?branch=dilithium-ml-dsa-44#a81488f3c741c09a6b0ba1bb02ea016ddcdf2372"
 dependencies = [
  "Inflector",
  "proc-macro2",

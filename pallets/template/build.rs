@@ -48,7 +48,7 @@ fn main() {
         fs::write(out_dir.join("ec_sig.bin"), signature.as_ref() as &[u8]).expect("write ec_sig");
         fs::write(out_dir.join("ec_signer.bin"), signer32).expect("write ec_signer");
     }
-
+    /*
     // ----------------
     // Dilithium / ML-DSA-87
     // ----------------
@@ -67,7 +67,7 @@ fn main() {
         fs::write(out_dir.join("dil_sig.bin"), signature.as_slice()).expect("write dil_sig");
         fs::write(out_dir.join("dil_signer.bin"), signer32).expect("write dil_signer");
     }
-    /*
+    
     // ----------------
     // Dilithium / ML-DSA-44
     // ----------------
