@@ -57,7 +57,7 @@ Run with:
 ./target/release/solochain-template-node --dev
 ```
 
-## Instant Node
+## Instant Node (dilithium-instant)
 
 This version enables instant block inclusion.
 
